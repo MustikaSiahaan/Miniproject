@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Menu from '../views/Menu.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
+import OrderResult from '../components/OrderResult.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     name: 'Contact',
     component: Contact,
   },
+  {
+    path: '/order',
+    name: 'Order',
+    component: OrderResult,
+  }
 ]
 
 const router = new VueRouter({
