@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Menu from '../views/Menu.vue'
 
 
 Vue.use(VueRouter)
@@ -11,7 +12,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  
+  {
+    path: '/menu',
+    name: 'Menu',
+    component: Menu
+  },
 ]
 
 const router = new VueRouter({
